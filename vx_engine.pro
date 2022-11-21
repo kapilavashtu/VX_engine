@@ -9,11 +9,27 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    audioplayer.cpp \
+    logicengine.cpp \
+    logicparcer.cpp \
+    logicworker.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    modbusdriver.cpp \
+    tcpserver.cpp \
+    videoplayer.cpp \
+    virtualdbdriver.cpp
 
 HEADERS += \
-    mainwindow.h
+    audioplayer.h \
+    logicengine.h \
+    logicparcer.h \
+    logicworker.h \
+    mainwindow.h \
+    modbusdriver.h \
+    tcpserver.h \
+    videoplayer.h \
+    virtualdbdriver.h
 
 FORMS += \
     mainwindow.ui
