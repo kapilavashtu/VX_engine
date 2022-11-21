@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="bigButton">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -23,11 +23,16 @@
       <height>381</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Fuck you dig asshole!</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="startButton">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -37,10 +42,10 @@
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Start</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="stopButton">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -50,10 +55,10 @@
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Stop</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_4">
+   <widget class="QPushButton" name="optionsButton">
     <property name="geometry">
      <rect>
       <x>260</x>
@@ -63,7 +68,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Options</string>
     </property>
    </widget>
    <widget class="QTextBrowser" name="textBrowser">

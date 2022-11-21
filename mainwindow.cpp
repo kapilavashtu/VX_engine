@@ -6,10 +6,30 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    //objects inits
+
+    //set widgets params
+
+    //set object & attributes params
+
+    //set configs
+
+    //set connections
+
+    connect(ui->bigButton, &QPushButton::clicked, ui->bigButton, &QPushButton::hide);
+    connect(ui->startButton, &QPushButton::clicked, ui->bigButton, &QPushButton::show);
+    connect(ui->optionsButton, &QPushButton::clicked, this, &MainWindow::setText);
+    //connect(ui->bigButton, &QPushButton::clicked, ui->bigButton, &QPushButton::hide);
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::setText()
+{
+    ui->textBrowser->setText("fffffffffffffffuck");
 }
 
