@@ -1,0 +1,5 @@
+--resource
+/home/linq/repos/actual/vx_engine/build/Desktop_Qt_6_8_0-Debug/.qt/rcc/qmake_vx_engine.qrc
+--resource
+/home/linq/repos/actual/vx_engine/build/Desktop_Qt_6_8_0-Debug/.qt/rcc/appvx_engine_raw_qml_0.qrc
+/qt/qml/vx_engine/Main.qml

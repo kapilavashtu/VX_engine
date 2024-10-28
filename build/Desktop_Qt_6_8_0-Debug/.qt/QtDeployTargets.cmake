@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_appvx_engine_FILE /home/linq/repos/actual/vx_engine/build/Desktop_Qt_6_8_0-Debug/appvx_engine)
+set(__QT_DEPLOY_TARGET_appvx_engine_TYPE EXECUTABLE)

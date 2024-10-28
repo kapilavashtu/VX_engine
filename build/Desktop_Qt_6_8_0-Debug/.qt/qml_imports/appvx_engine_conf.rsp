@@ -1,0 +1,14 @@
+-rootPath
+/home/linq/repos/actual/vx_engine
+-cmake-output
+-output-file
+/home/linq/repos/actual/vx_engine/build/Desktop_Qt_6_8_0-Debug/.qt/qml_imports/appvx_engine_conf.cmake
+-importPath
+/home/linq/repos/actual/vx_engine/build/Desktop_Qt_6_8_0-Debug/vx_engine
+-importPath
+/home/linq/repos/actual/vx_engine/build/Desktop_Qt_6_8_0-Debug
+-importPath
+/home/linq/Qt6/6.8.0/gcc_64/qml
+-qrcFiles
+/home/linq/repos/actual/vx_engine/build/Desktop_Qt_6_8_0-Debug/.qt/rcc/qmake_vx_engine.qrc
+/home/linq/repos/actual/vx_engine/build/Desktop_Qt_6_8_0-Debug/.qt/rcc/appvx_engine_raw_qml_0.qrc

@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/qt/qml/vx_engine">/home/linq/repos/actual/vx_engine/build/Desktop_Qt_6_8_0-Debug/vx_engine</file>
+
+  </qresource>
+</RCC>
