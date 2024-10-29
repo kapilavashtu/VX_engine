@@ -1,0 +1,5 @@
+module vx_engine
+typeinfo appvx_engine.qmltypes
+prefer :/qt/qml/vx_engine/
+Main 1.0 Main.qml
+
