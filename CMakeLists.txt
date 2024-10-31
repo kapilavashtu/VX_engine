@@ -4,7 +4,7 @@ project(vx_engine VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 6.5 REQUIRED COMPONENTS Quick Widgets)
+find_package(Qt6 6.5 REQUIRED COMPONENTS Quick Widgets Multimedia)
 
 qt_standard_project_setup(REQUIRES 6.5)
 
@@ -19,6 +19,7 @@ qt_add_qml_module(appvx_engine
         Main.qml
 SOURCES controlblock.h controlblock.cpp
 RESOURCES controlblock.ui
+SOURCES camera.cpp camera.h data.cpp data.h defines.h mainwindow.cpp mainwindow.h server.cpp server.h vxtimer.cpp vxtimer.h worker.cpp worker.h
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
@@ -32,7 +33,7 @@ set_target_properties(appvx_engine PROPERTIES
     WIN32_EXECUTABLE TRUE
 )
 
-target_link_libraries(appvx_engine PRIVATE Qt6::Quick Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(appvx_engine PRIVATE Qt6::Quick Qt${QT_VERSION_MAJOR}::Widgets Qt6::Multimedia)
 
 include(GNUInstallDirs)
 install(TARGETS appvx_engine

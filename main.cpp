@@ -2,7 +2,6 @@
 #include <QQmlApplicationEngine>
 #include <QQuickItem>
 
-#include "controlblock.h"
 
 int main(int argc, char *argv[])
 {

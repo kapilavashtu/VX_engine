@@ -24,6 +24,8 @@ ApplicationWindow {
         // Кнопка внутри панели для закрытия
         Button {
             text: "Close"
+            width: 200
+            height: 80
             anchors.centerIn: parent
             onClicked: {
                 console.log("Close button clicked")
