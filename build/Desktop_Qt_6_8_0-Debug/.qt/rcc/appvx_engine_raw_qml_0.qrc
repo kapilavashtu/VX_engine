@@ -1,7 +1,0 @@
-<RCC>
-  <qresource prefix="/qt/qml/vx_engine/">
-    <file alias="Main.qml">/home/linq/repos/actual/vx_engine/Main.qml</file>
-    <file alias="controlblock.ui">/home/linq/repos/actual/vx_engine/controlblock.ui</file>
-  </qresource>
-</RCC>
-
