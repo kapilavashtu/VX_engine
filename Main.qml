@@ -71,6 +71,174 @@ ApplicationWindow {
         }
     }
 
+    // Контейнер для кнопок и текстового поля
+    RowLayout {
+        anchors.top: parent.top
+        anchors.left: parent.left
+        anchors.margins: 10
+
+
+        Button {
+            text: "Start"
+            Layout.preferredWidth: 100
+            Layout.preferredHeight: 80
+            font.pointSize: 16
+            font.family: "Arial"
+
+            onClicked: {
+                console.log("Start button clicked")
+            }
+
+            background: Rectangle {
+                id: startbuttonBackground
+                width: parent.width
+                height: parent.height
+                radius: 10  // Закругление углов
+
+                property real gradientPosition: 0.0
+
+                gradient: Gradient {
+                    GradientStop { position: startbuttonBackground.gradientPosition; color: "blueviolet" }
+                    GradientStop { position: startbuttonBackground.gradientPosition + 0.5; color: "blue" }
+                }
+
+                MouseArea {
+                    anchors.fill: parent
+                    hoverEnabled: true
+                    onEntered: {
+                        gradientAnimation.running = true
+                        startbuttonBackground.radius = 15
+
+                    }
+                    onExited: {
+                        gradientAnimation.running = false
+                        startbuttonBackground.radius = 10
+                    }
+                }
+
+                NumberAnimation {
+                    id: gradientAnimation
+                    target: startbuttonBackground
+                    property: "gradientPosition"
+                    from: 0.0
+                    to: 1.0
+                    duration: 2000
+                    loops: Animation.Infinite
+                    easing.type: Easing.Linear
+                }
+            }
+        }
+
+        Button {
+            text: "Stop"
+            Layout.preferredWidth: 100
+            Layout.preferredHeight: 80
+            font.pointSize: 16
+            font.family: "Arial"
+
+            onClicked: {
+                console.log("Stop button clicked")
+            }
+
+            background: Rectangle {
+                id: stopbuttonBackground
+                width: parent.width
+                height: parent.height
+                radius: 10  // Закругление углов
+
+                property real gradientPosition: 0.0
+
+                gradient: Gradient {
+                    GradientStop { position: stopbuttonBackground.gradientPosition; color: "lightcoral" }
+                    GradientStop { position: stopbuttonBackground.gradientPosition + 0.5; color: "blue" }
+                }
+
+                MouseArea {
+                    anchors.fill: parent
+                    hoverEnabled: true
+                    onEntered: {
+                        stopgradientAnimation.running = true
+                        stopbuttonBackground.radius = 15
+
+                    }
+                    onExited: {
+                        stopgradientAnimation.running = false
+                        stopbuttonBackground.radius = 10
+                    }
+                }
+
+                NumberAnimation {
+                    id: stopgradientAnimation
+                    target: stopbuttonBackground
+                    property: "gradientPosition"
+                    from: 0.0
+                    to: 1.0
+                    duration: 3000
+                    loops: Animation.Infinite
+                    easing.type: Easing.Linear
+                }
+            }
+        }
+
+        Button {
+            text: "Exit"
+            Layout.preferredWidth: 100
+            Layout.preferredHeight: 80
+            font.pointSize: 16
+            font.family: "Arial"
+
+            onClicked: {
+                console.log("Exit button clicked")
+            }
+
+            background: Rectangle {
+                id: exitbuttonBackground
+                width: parent.width
+                height: parent.height
+                radius: 10  // Закругление углов
+
+                property real gradientPosition: 0.0
+
+                gradient: Gradient {
+                    GradientStop { position: exitbuttonBackground.gradientPosition; color: "lightblue" }
+                    GradientStop { position: exitbuttonBackground.gradientPosition + 0.5; color: "blue" }
+                }
+
+                MouseArea {
+                    anchors.fill: parent
+                    hoverEnabled: true
+                    onEntered: {
+                        exitgradientAnimation.running = true
+                        exitbuttonBackground.radius = 15
+
+                    }
+                    onExited: {
+                        exitgradientAnimation.running = false
+                        exitbuttonBackground.radius = 10
+                    }
+                }
+
+                NumberAnimation {
+                    id: exitgradientAnimation
+                    target: exitbuttonBackground
+                    property: "gradientPosition"
+                    from: 0.0
+                    to: 1.0
+                    duration: 6000
+                    loops: Animation.Infinite
+                    easing.type: Easing.Linear
+                }
+            }
+        }
+
+        // Виджет текстового поля
+        TextField {
+            Layout.preferredWidth: 300
+            Layout.preferredHeight: 400
+            placeholderText: "Enter text here"
+        }
+    }
+
     // Обновляем размеры и позицию `slider` при изменении размеров главного окна
     onWidthChanged: {
         slider.width = mainWindow.width / 3
